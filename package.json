@@ -1,0 +1,13 @@
+{
+  "name": "robot-ai",
+  "version": "1.0.0",
+  "description": "Website 3D Ultra-Realistis Robot AI",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
