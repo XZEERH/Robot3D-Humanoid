@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Humanoid Robot</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Import Maps untuk Three.js (Native ES Modules) -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Futuristic Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="cyber-circle"></div>
+            <h1 class="glitch-text" data-text="INITIALIZING AI...">INITIALIZING AI...</h1>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="loading-text">Loading Neural Network: 0%</p>
+        </div>
+    </div>
+
+    <!-- WebGL Canvas Container -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Main Logic -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
